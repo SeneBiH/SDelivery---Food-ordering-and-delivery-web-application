@@ -1,0 +1,255 @@
+/* .about {
+  width: 100%;
+  height: 180vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutTop {
+  width: 100%;
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.aboutBottom {
+  display: flex;
+  flex-direction: column;
+  height: 55%;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.aboutBottom p {
+  width: 1200px;
+}
+
+.about .aboutBottom h1 {
+  font-weight: 400;
+  font-size: 70px;
+  color: black;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  transform: translateY(-40px);
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .about {
+    height: auto;
+  }
+
+  .aboutTop {
+    height: 40vh;
+  }
+
+  .aboutBottom {
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .aboutBottom p {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .about .aboutBottom h1 {
+    font-size: 30px;
+    transform: translateY(0);
+    margin-bottom: 10px;
+  }
+} */
+
+
+.about {
+  width: 100%;
+}
+
+
+.aboutTitle {
+  background-image: url('../../public/images/sasa.jpeg');
+  height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.aboutTitle h1 {
+  text-align: center;
+  margin: 0 auto;
+  vertical-align: middle;
+  padding-top: 300px;
+  color: white;
+  font-size: 3.2em;
+}
+
+
+.firstPart {
+  background: #bdc3c7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100%;
+}
+
+.firstPart h1 {
+  font-weight: 400;
+  font-size: 70px;
+  color: white;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  transform: translateY(-40px);
+  margin-bottom: 20px;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+
+.firstPotPart {
+  display: flex;
+  /* margin-bottom: 60px; */
+}
+
+
+.firstPartText {
+  width: 50%;
+}
+
+.firstPotPart p {
+  color: white;
+  margin-top: 150px;
+  padding-left: 200px;
+  text-align: center;
+  width: 90%;
+  line-height: 35px;
+}
+
+.firstPartImage {
+  width: 50%;
+  margin-left: 150px;
+}
+
+.firstPotPart img {
+  width: 400px;
+  height: 700px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+
+.secondPart {
+  background: #bdc3c7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.secondPart img {
+  width: 400px;
+  height: 600px;
+}
+
+.secondPart p {
+  padding-top: 20px;
+  width: 450px;
+  text-align: center;
+  color: white;
+}
+
+.thirdPart {
+  background: #bdc3c7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.thirdPart img {
+  width: 400px;
+  height: 600px;
+}
+
+.thirdPart p {
+  padding-top: 200px;
+  width: 450px;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .about {
+    height: auto;
+  }
+
+  .firstPart h1{
+    font-size: 50px;
+    padding-top: 120px;
+  }
+
+  .firstPotPart{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .firstPartText {
+    width: 100%;
+  }
+
+  .firstPotPart p {
+    color: white;
+    margin-top: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    line-height: 25px;
+  }
+
+  .firstPartImage {
+    width: 100%;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .secondPart{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .secondPart img {
+    width: 400px;
+    height: 600px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .secondPart p {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+  }
+
+  .thirdPart{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .thirdPart p {
+    padding-top: 0;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+  }
+
+  .thirdPart img {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}

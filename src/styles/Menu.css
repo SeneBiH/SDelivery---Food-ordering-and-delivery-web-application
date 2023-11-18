@@ -1,0 +1,354 @@
+/* .menu {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menuList {
+  transition: margin 0.3s;
+}
+
+.menuList.shift-left {
+  margin-left: -350px;
+}
+.menu .menuTitle {
+  font-size: 60px;
+}
+
+.menuList {
+  width: 70vw;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+}
+
+.add-to-basket-button {
+  position: absolute;
+  background: #007bff;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  bottom: 0;
+  right: 1px;
+}
+
+
+.menuItem {
+  position: relative;
+  border-radius: 15px;
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+.menuItem:hover {
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.menuItem div {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menuItem h1 {
+  font-size: 28px;
+}
+.menuItem p {
+  margin-top: 15px;
+}
+
+.menuItem h1,
+.menuItem p {
+  margin-left: 20px;
+}
+.description {
+  margin-top: 20px;
+  font-style: italic;
+  color: gray;
+  font-size: 14px;
+}
+.modal {
+  display: block !important;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 10px;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  max-width: 400px;
+  position: relative;
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  right: 8px;
+  top: -8px;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+p.description {
+  font-style: italic;
+  color: gray;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .menuList {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .menuList {
+    grid-template-columns: 1fr;
+  }
+  .menuItem {
+    margin-left: 8px;
+  }
+  .modal {
+    top: 5px;
+  }
+  .modal-content {
+    margin: 10% auto 5% auto;
+    max-width: 70%;
+    top: 100px;
+  }
+} */
+
+.menu {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #bdc3c7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #2c3e50,
+    #bdc3c7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #2c3e50,
+    #bdc3c7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.menuList {
+  /* Your existing menuList styles here */
+  transition: margin 0.3s; /* Add a transition for smoother animation */
+}
+
+.menuList.shift-left {
+  margin-left: -350px; /* Adjust the margin value as needed */
+}
+.menu .menuTitle {
+  /* font-family: cursive; */
+  font-size: 60px;
+}
+
+.menuTitle {
+  padding-top: 40px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.menuList {
+  width: 70vw;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+}
+
+.add-to-basket-button {
+  position: absolute;
+  background: #01959a;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  bottom: 0;
+  right: 1px;
+}
+
+/* MENU ITEM STYLING */
+
+.menuItem {
+  position: relative;
+  border-radius: 15px;
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+  background-color: #fff;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  margin-left: 10px !important;
+}
+.menuItem:hover {
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.menuItem div {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menuItem h1 {
+  font-size: 28px;
+}
+.menuItem p {
+  margin-top: 15px;
+}
+
+.menuItem h1,
+.menuItem p {
+  margin-left: 20px !important;
+}
+.description {
+  margin-top: 20px;
+  font-style: italic;
+  color: gray;
+  font-size: 14px;
+}
+.modal {
+  display: block !important;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 10px;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  max-width: 400px;
+  position: relative;
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  right: 8px;
+  top: -8px;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.menu img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+}
+
+.menu h2 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.menu p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.menu p.description {
+  font-style: italic;
+  color: gray;
+  font-size: 16px;
+}
+
+.cartButton {
+  color: white;
+  background-color: #01959a;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 20px;
+  transition: 0.3s ease-in-out;
+}
+
+.cartButton:hover {
+  color: black;
+  background-color: white;
+}
+
+@media only screen and (max-width: 1300px) {
+  .menuList {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .menuList {
+    grid-template-columns: 1fr;
+  }
+  .menuItem {
+    margin-left: 8px;
+  }
+  .modal {
+    top: 5px;
+  }
+  .modal-content {
+    margin: 10% auto 5% auto;
+    max-width: 70%;
+    top: 100px;
+  }
+}
